@@ -88,7 +88,175 @@ def insertar():
                 except ValueError:
                     print("Ingresa un número entero")
 
-            # Resto del código...
+            print("Introduce el color (Número entero)")
+            color = None
+            res3 = None
+            value3 = True
+            while value3:
+                try:
+                    respuesta3 = input()
+                    color = int(respuesta3)
+                    if isinstance(color, int):
+                        value3 = False
+                except ValueError:
+                    print("Ingresa un número entero")
+            
+            print("Introduce la sexo (Número entero)")
+            sexo = None
+            res4 = None
+            value4 = True
+            while value4:
+                try:
+                    respuesta4 = input()
+                    sexo = int(respuesta4)
+                    if isinstance(sexo, int):
+                        value4 = False
+                except ValueError:
+                    print("Ingresa un número entero")
+
+            print("Introduce el temp_id (Número entero)")
+            temp = None
+            res5 = None
+            value5 = True
+            while value5:
+                try:
+                    respuesta5 = input()
+                    temp = int(respuesta5)
+                    if isinstance(temp, int):
+                        value5 = False
+                except ValueError:
+                    print("Ingresa un número entero")
+
+            print("Introduce el Pais (Número entero)")
+            pais = None
+            res6 = None
+            value6 = True
+            while value6:
+                try:
+                    respuesta6 = input()
+                    pais = int(respuesta6)
+                    if isinstance(pais, int):
+                        value6 = False
+                except ValueError:
+            print("Ingresa un número entero")
+             print("Introduce el id de la sucursal (Número entero)")
+            suc = None
+            res7 = None
+            value7 = True
+            while value7:
+                try:
+                    respuesta7 = input()
+                    suc = int(respuesta7)
+                    if isinstance(suc, int):
+                        value7 = False
+                except ValueError:
+                    print("Ingresa un número entero")
+
+            print("Introduce el id de la rec (Número entero)")
+            rec = None
+            res8 = None
+            value8 = True
+            while value8:
+                try:
+                    respuesta8 = input()
+                    rec = int(respuesta8)
+                    if isinstance(rec, int):
+                        value8 = False
+                except ValueError:
+                    print("Ingresa un número entero")
+
+
+            print("Introduce el id del departamento (Número entero)")
+            dep = None
+            res9 = None
+            value9 = True
+            while value9:
+                try:
+                    respuesta9 = input()
+                    dep = int(respuesta9)
+                    if isinstance(dep, int):
+                        value9 = False
+                except ValueError:
+                    print("Ingresa un número entero")
+            
+            print("Introduce el id del com (Número entero)")
+            Com = None
+            res10 = None
+            value10 = True
+            while value10:
+                try:
+                    respuesta10 = input()
+                    Com = int(respuesta10)
+                    if isinstance(Com, int):
+                        value10 = False
+                except ValueError:
+                    print("Ingresa un número entero")
+
+            print("Introduce el id del Mat (Número entero)")
+            Mat = None
+            res11 = None
+            value11 = True
+            while value11:
+                try:
+                    respuesta11 = input()
+                    Mat = int(respuesta11)
+                    if isinstance(Mat, int):
+                        value11 = False
+                except ValueError:
+                    print("Ingresa un número entero")
+
+            print("Introduce el id del desc (Número entero)")
+            desc = None
+            res12 = None
+            value12 = True
+            while value12:
+                try:
+                    respuesta12 = input()
+                    desc = int(respuesta12)
+                    if isinstance(desc, int):
+                        value12 = False
+                except ValueError:
+                    print("Ingresa un número entero")
+            
+            print("Introduce el id del MS (Número entero)")
+            ms = None
+            res13 = None
+            value13 = True
+            while value13:
+                try:
+                    respuesta13 = input()
+                    ms = int(respuesta13)
+                    if isinstance(ms, int):
+                        value13 = False
+                except ValueError:
+                    print("Ingresa un número entero")
+
+            print("Introduce el precio (Número decimal)")
+            precio = None
+            res14 = None
+            value14 = True
+            while value14:
+                try:
+                    respuesta14 = input()
+                    precio = float(respuesta13)
+                    if isinstance(precio, float):
+                        value14 = False
+                except ValueError:
+                    print("Ingresa un número entero")
+            print("Introduce la fecha")
+            fecha = input()
+            print("Introduce el id de Acepta DEV (Número entero)")
+            dev = None
+            res15 = None
+            value15 = True
+            while value15:
+                try:
+                    respuesta15 = input()
+                    dev = int(respuesta15)
+                    if isinstance(dev, int):
+                        value15 = False
+                except ValueError:
+                    print("Ingresa un número entero")
 
             query = f"INSERT INTO {Tabla} VALUES ({Product_id}, {talla}, {color}, {sexo}, {temp}, {pais}, {suc}, {rec}, {dep}, {Com}, {Mat}, {desc}, {ms}, {precio}, '{fecha}', {dev})"
             with cnx.cursor() as cursor:
